@@ -66,7 +66,11 @@ while(i < tvShows.length){
 
 */
 
-
+var i = 1;
+while(i <= 9){
+	console.log(i + ' x 3 = ' + i*3)
+	i++
+}
 
 
 
@@ -96,7 +100,19 @@ devleague homie!
 ...
 ...
 ...*/
-
+var i = 1
+while (i <= 100){
+	if (i % 3 === 0 && i % 5 !== 0){
+		console.log('dev')
+	} else if(i % 5 === 0 && i % 3 !== 0){
+		console.log('league')
+	} else if (i % 5 === 0 && i % 3 === 0){
+		console.log('develeague homie!')
+	} else{
+		console.log(i)
+	}
+	i++
+}
 
 /*
  * #6
@@ -108,7 +124,16 @@ devleague homie!
  will purchase a donut as long as you have the sufficient funds.
  *Pass in a number value to invoke your function. Console.log donutBought.
 */ 
-
-
+var donutPrice = 5
+var donutBought = 0
+function buyDonut(budget){
+	while(budget > donutPrice){
+		budget = budget - donutPrice;
+		donutBought ++
+		console.log(budget);
+		console.log(donutBought)
+	}
+}
+buyDonut(100)
 
 
